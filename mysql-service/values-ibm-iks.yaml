@@ -1,0 +1,6 @@
+mysql:
+  auth:
+    existingSecret: mysql-creds
+  primary:
+    persistence:
+      size: 8Gi
