@@ -1,0 +1,21 @@
+services:
+
+  mysql:
+    chart: https://raw.githubusercontent.com/Ayyppan17/boarepo/main/docs/charts/mysql-service-0.1.0.tgz
+    namespace: database
+    release: orderhub-mysql
+
+    overrides:
+      mysql:
+        image:
+          repository: bitnamilegacy/mysql
+
+  velero:
+    chart: https://raw.githubusercontent.com/Ayyppan17/boarepo/main/docs/charts/velero-8.0.0.tgz
+    namespace: velero
+    release: velero
+
+  nginx:
+    chart: https://raw.githubusercontent.com/Ayyppan17/boarepo/main/docs/charts/ingress-nginx-4.15.1.tgz
+    namespace: ingress-nginx
+    release: ingress-nginx
