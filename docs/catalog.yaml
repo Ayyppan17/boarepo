@@ -15,7 +15,12 @@ services:
     namespace: velero
     release: velero
 
-  nginx:
+  ingress-nginx:
     chart: https://raw.githubusercontent.com/Ayyppan17/boarepo/main/docs/charts/ingress-nginx-4.15.1.tgz
     namespace: ingress-nginx
     release: ingress-nginx
+
+  kubeai:
+    chart: https://raw.githubusercontent.com/Ayyppan17/boarepo/main/docs/charts/kubeai-stack-0.1.0.tgz
+    namespace: kubeai-system
+    release: kubeai
